@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Candidate Search - HR Solution</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Candidate Search</h1>
+    <div class="search-filters">
+      <div>
+        <label for="location">Location:</label>
+        <input type="text" id="location" placeholder="Enter location">
+      </div>
+      <div>
+        <label for="job-role">Job Role:</label>
+        <input type="text" id="job-role" placeholder="Enter job role">
+      </div>
+      <div>
+        <label for="experience">Experience:</label>
+        <input type="range" id="experience" min="0" max="10" step="1" value="0">
+      </div>
+      <div>
+        <button id="search-button">Search</button>
+      </div>
+    </div>
+    <div id="candidates-section">
+      <h2>Fetched Candidates</h2>
+      <div id="candidates-list"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
