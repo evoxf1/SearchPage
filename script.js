@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (
           (location === '' || candidate.location.toLowerCase().includes(location.toLowerCase())) &&
           (jobRole === '' || candidate.jobRole.toLowerCase().includes(jobRole.toLowerCase())) &&
-          (experience === 0 || candidate.experience >= experience)
+          (experience === '0' || candidate.experience >= experience)
         ) {
           const candidateCard = document.createElement('div');
           candidateCard.className = 'candidate-card';
